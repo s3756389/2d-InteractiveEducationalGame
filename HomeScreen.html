@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>123Learning</title>
+      <meta name="viewport" content="width=device-width, inital-scale=1">
+      <link rel="icon" href="assets/2D.jpg">
+      <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+      <script src="js/homeScreen.js"></script>
+      <link rel="stylesheet" href="styles/homeScreen.css">
+    </head>
+    
+    <body onload="init()">
+      <div class="canvas-container">
+        <canvas id="homeCanvas" width="1024px" height="768px"></canvas>
+        <img src="assets/TeamLogo.JPG" alt="Logo" id="logo">
+        <img src="assets/Cartoon_cloud.svg" alt="cloud1" id="cloud1">
+        <img src="assets/Cartoon_cloud.svg" alt="cloud2" id="cloud2">
+        <img src="assets/tree.svg" alt="SVG Tree" id="tree">
+        <button class="button sButton" id="sButton" onclick="spellingButton()">Spelling</button>
+        <button class="button mButton" id="mButton" onclick="mathButton()">Mathematics</button>
+        <p id="title">123Learning</p>
+      </div>        
+    </body>
+
+</html>

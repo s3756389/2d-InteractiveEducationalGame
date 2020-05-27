@@ -1,0 +1,78 @@
+.canvas-container{
+    position: relative;
+    width: 1024px;
+    height: 768px;
+}
+#homeCanvas{
+    position: absolute;
+    background-color: #0FF;
+}
+#sButton{
+    position: absolute;
+    left: 23%;
+    top: 41%;
+}
+#mButton{
+    position: absolute;
+    left: 23%;
+    top: 58%;
+}
+#logo{
+    position: absolute;
+    width: 250px;
+    bottom: 0px;
+    right: 0px;
+}
+#cloud1{
+    position: absolute;
+    width: 240px;
+    left: 30px;
+    top: 45px;
+}
+#cloud2{
+    position: absolute;
+    width: 240px;
+    right: 20px;
+    top: 120px;
+}
+#tree{
+    position: absolute;
+    width: 450px;
+    left: -100px;
+    bottom: -34px;
+}
+#title{
+    position: absolute;
+    left: 21.5%;
+    top: 2%;
+    font-family: cursive;
+    font-size: 100px;
+}
+
+
+.button{
+    border: none;
+    color: black;
+    background-color: #0FF;
+    padding: 15px 32px;
+    width: 525px;
+    font-family: cursive;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 64px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.sButton:hover{
+    background-color: steelblue;
+    color: white;
+}
+
+.mButton:hover{
+    background-color: steelblue;
+    color: white;
+}

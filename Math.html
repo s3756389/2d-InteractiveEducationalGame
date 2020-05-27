@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' conent='IE=edge'>
+        <title>123Learning - Maths</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel="icon" href="assets/2D.jpg">
+        <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+        <script src="js/math.js"></script>
+        <link rel="stylesheet" href="styles/math.css">
+    </head>
+
+    <body onload="init()">
+       <div class="canvas-container">
+        <canvas id="mathCanvas" width="1024px" height="768px"></canvas>
+        <img src="assets/Cartoon_cloud.svg" alt="SunCloud" id="cloud">
+        <img src="assets/Cartoon_cloud.svg" alt="EquationCloud" id="eCloud">
+        <p id="equation"></p>
+        <button class="bubble incorrectBubble" id="bubble1" onclick="incorrect()"></button>
+        <button class="bubble incorrectBubble" id="bubble2" onclick="incorrect()"></button>
+        <button class="bubble correctBubble" id="bubble3" onclick="correct()"></button>
+        <button class="bubble incorrectBubble" id="bubble4" onclick="incorrect()"></button>
+        <button class="bubble incorrectBubble" id="bubble5" onclick="incorrect()"></button>
+        <button class="bubble incorrectBubble" id="bubble6" onclick="incorrect()"></button>
+        <p class="bubble lifeBubble" id="life1"></p>
+        <p class="bubble lifeBubble" id="life2"></p>
+        <p class="bubble lifeBubble" id="life3"></p>
+       </div>
+    </body>
+
+</html>
