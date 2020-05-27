@@ -34,7 +34,7 @@ function generateAdditionProblem(){
     document.getElementById("equation").innerHTML = randNum1 + op + randNum2;
     document.getElementById("bubble3").innerHTML = answer;
     
-    while (incorrectArray < 5){
+    while (incorrectArray.length < 5){
         var incorrectAnswer = Math.floor(Math.random() * 10);
 
         if (incorrectAnswer == answer) {
@@ -60,7 +60,7 @@ function generateSubtractionProblem(){
     document.getElementById("equation").innerHTML = randNum1 + op + randNum2;
     document.getElementById("bubble3").innerHTML = answer;
 
-    while (incorrectArray < 5){
+    while (incorrectArray.length < 5){
         var incorrectAnswer = Math.floor(Math.random() * 10);
 
         if (incorrectAnswer == answer) {
@@ -94,19 +94,7 @@ function incorrect(){
     return false;
 }
 
-// function randInc(){
-//     var incorrectArray = [];
-    
-//     while (incorrectArray < 5){
-//         var incorrectAnswer = Math.floor(Math.random() * 10);
 
-//         if (incorrectAnswer == answer) {
-//             continue;
-//         } else {
-//             incorrectArray.push(incorrectAnswer);
-//         }
-//     }
-// }
 
 
 

@@ -57,21 +57,6 @@
     left: 725px;
     bottom: 50px;
 }
-#life1{
-    position: absolute;
-    left: 520px;
-    top: 215px;
-}
-#life2{
-    position: absolute;
-    left: 495px;
-    top: 215px;
-}
-#life3{
-    position: absolute;
-    left: 470px;
-    top: 215px;
-}
 
 
 .bubble{
@@ -104,11 +89,7 @@
     radial-gradient(100% 100% at 50% 25%, transparent, #0FF 98%);
     border: 1px solid #0FF; 
 }
-.lifeBubble{
-    height: 20px;
-    width: 20px;
-    cursor: default;
-}
+
 
 
 
