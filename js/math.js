@@ -4,6 +4,7 @@ var randNum2;
 var op;
 var answer;
 const CIRCLE_RADIUS = 100;
+var incorrectArray = [];
 
 var problemArray = [
     generateAdditionProblem,
@@ -32,12 +33,22 @@ function generateAdditionProblem(){
     
     document.getElementById("equation").innerHTML = randNum1 + op + randNum2;
     document.getElementById("bubble3").innerHTML = answer;
+    
+    while (incorrectArray < 5){
+        var incorrectAnswer = Math.floor(Math.random() * 10);
 
-    document.getElementById("bubble1").innerHTML = randInc();
-    document.getElementById("bubble2").innerHTML = randInc();
-    document.getElementById("bubble4").innerHTML = randInc();
-    document.getElementById("bubble5").innerHTML = randInc();
-    document.getElementById("bubble6").innerHTML = randInc();
+        if (incorrectAnswer == answer) {
+            continue;
+        } else {
+            incorrectArray.push(incorrectAnswer);
+        }
+    }
+
+    document.getElementById("bubble1").innerHTML = incorrectArray[0];
+    document.getElementById("bubble2").innerHTML = incorrectArray[1];
+    document.getElementById("bubble4").innerHTML = incorrectArray[2];
+    document.getElementById("bubble5").innerHTML = incorrectArray[3];
+    document.getElementById("bubble6").innerHTML = incorrectArray[4];
 }
 
 function generateSubtractionProblem(){
@@ -48,12 +59,22 @@ function generateSubtractionProblem(){
     
     document.getElementById("equation").innerHTML = randNum1 + op + randNum2;
     document.getElementById("bubble3").innerHTML = answer;
+
+    while (incorrectArray < 5){
+        var incorrectAnswer = Math.floor(Math.random() * 10);
+
+        if (incorrectAnswer == answer) {
+            continue;
+        } else {
+            incorrectArray.push(incorrectAnswer);
+        }
+    }
     
-    document.getElementById("bubble1").innerHTML = randInc();
-    document.getElementById("bubble2").innerHTML = randInc();
-    document.getElementById("bubble4").innerHTML = randInc();
-    document.getElementById("bubble5").innerHTML = randInc();
-    document.getElementById("bubble6").innerHTML = randInc();
+    document.getElementById("bubble1").innerHTML = incorrectArray[0];
+    document.getElementById("bubble2").innerHTML = incorrectArray[1];
+    document.getElementById("bubble4").innerHTML = incorrectArray[2];
+    document.getElementById("bubble5").innerHTML = incorrectArray[3];
+    document.getElementById("bubble6").innerHTML = incorrectArray[4];
 }
 
 function generateProblem(){
@@ -74,13 +95,17 @@ function incorrect(){
 }
 
 // function randInc(){
-//     var incorrectAnswer = Math.floor(Math.random() * 10);
+//     var incorrectArray = [];
+    
+//     while (incorrectArray < 5){
+//         var incorrectAnswer = Math.floor(Math.random() * 10);
 
-//     for (var i = 0; i < 5; i++){
-//         if (incorrectAnswer != answer){
-//             return incorrectAnswer;
-//         } 
-//     }   
+//         if (incorrectAnswer == answer) {
+//             continue;
+//         } else {
+//             incorrectArray.push(incorrectAnswer);
+//         }
+//     }
 // }
 
 

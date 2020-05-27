@@ -21,15 +21,13 @@ function createSun(){
     stage.addChild(sun);
 }
 
-// need to add Spelling.html path for final version
 function spellingButton(){
-    // var sURL = 
-    // window.location = sURL;
+    var sURL = "js\spelling.js"
+    window.location = sURL;
 }
 
 function mathButton(){
-    // currently the file path, will need to change it to the Math.html path for final version
-    var mURL = "file:///C:/Users/User/Documents/Visual%20Studio%202017/MathematicsInteractivity/Math.html"
+    var mURL = "js\math.js"
     window.location = mURL;
 }
 
