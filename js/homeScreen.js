@@ -22,12 +22,12 @@ function createSun(){
 }
 
 function spellingButton(){
-    var sURL = "C:\Users\User\2d-InteractiveEducationalGame\js\spelling.js"
+    var sURL = "Spelling.html"
     window.location = sURL;
 }
 
 function mathButton(){
-    var mURL = "C:\Users\User\2d-InteractiveEducationalGame\js\math.js"
+    var mURL = "Math.html"
     window.location = mURL;
 }
 
